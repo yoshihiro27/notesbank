@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+...
+
+{% block content %}
+<div class="container mt-3">
+    <h2><a href="{% url 'notes:create1' %}">1学年</a></h2>
+    <h2><a href="{% url 'notes:create' %}">2学年以降</a></h2>
+</div>
+{% endblock content %}

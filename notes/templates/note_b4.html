@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+...
+
+{% block content %}
+<div class="container"><h2>理学院</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:math4' %}">数学系</a></h4>
+        <h4><a href="{% url 'notes:ph4' %}">物理系</a></h4>
+        <h4><a href="{% url 'notes:sc4' %}">化学系</a></h4>
+        <h4><a href="{% url 'notes:ti4' %}">地球惑星科学</a></h4>
+    </div>
+</div>
+<div class="container"><h2>工学院</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:me4' %}">機械系</a></h4>
+        <h4><a href="{% url 'notes:de4' %}">電気電子系</a></h4>
+        <h4><a href="{% url 'notes:tu4' %}">情報通信系</a></h4>
+        <h4><a href="{% url 'notes:si4' %}">システム制御系</a></h4>
+        <h4><a href="{% url 'notes:ke4' %}">経営工学系</a></h4>
+    </div>
+</div>
+<div class="container"><h2>物質理工学院</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:ma4' %}">材料系</a></h4>
+        <h4><a href="{% url 'notes:ou4' %}">応用化学系</a></h4>
+    </div>
+</div>
+<div class="container"><h2>情報理工学院</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:su4' %}">数理・計算科学系</a></h4>
+        <h4><a href="{% url 'notes:jo4' %}">情報工学系</a></h4>
+    </div>
+</div>
+<div class="container"><h2>生命理工学院</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:se4' %}">生命理工学系</a></h4>
+    </div>
+</div>
+<div class="container"><h2>環境社会理工学院</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:bu4' %}">建築系</a></h4>
+        <h4><a href="{% url 'notes:do4' %}">土木・環境工学系</a></h4>
+    </div>
+</div>
+<div class="container"><h2>その他</h2>
+    <div class="container">
+        <h4><a href="{% url 'notes:en4' %}">英語科目</a></h4>
+        <h4><a href="{% url 'notes:sec4' %}">第二外国語</a></h4>
+    </div>
+</div>
+{% endblock content %}

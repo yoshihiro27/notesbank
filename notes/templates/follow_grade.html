@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+...
+
+{% block content %}
+<div class="container">
+    <h2><a href="{% url 'notes:follow-list1' %}">1学年</a></h2>
+    <h2><a href="{% url 'notes:follow-list' %}">2学年以降</a></h2>
+    
+</div>
+{% endblock content %}

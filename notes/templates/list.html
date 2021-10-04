@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block customcss %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock customcss %}
+
+{% block content %}
+<div class="container mt-3">
+   {% for item in object_list %}
+   <div class="alert alert-success" role="alert">
+       <p>タイトル：<a href="{% url 'notes:detail' item.pk %}">{{item.title}}</a></p>
+       <p>投稿者：{{item.user.username}}</p>
+       <p>授業日：{{item.day}}</p>
+       
+       
+       
+       {% if request.user in item.like.all %}
+       <a href="{% url 'notes:like-home' item.pk %}" class="like-btn add-color" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-heart"></i>♡</a>{{item.like.count}}
+       {% else %}
+       <a href="{% url 'notes:like-home' item.pk %}" class="like-btn" tabindex="-1" role="button" aria-disabled="true"><i class="far fa-heart"></i>♡</a>{{item.like.count}}
+       {% endif %}  
+
+       {% if item.user in connection.0.following.all %}
+       <a href="{% url 'notes:follow-home' item.id %}" class="btn btn-danger ms-3" tabindex="-1" role="button" aria-disabled="true">フォロー解除</a>
+       {% else %}
+       <a href="{% url 'notes:follow-home' item.id %}" class="btn btn-primary ms-3" tabindex="-1" role="button" aria-disabled="true">フォロー</a>
+       {% endif %}
+       <img src="{{ item.file.url }}" width="193" height="130">
+   </div>
+   {% endfor %}
+
+   {% for item in object_list2 %}
+   <div class="alert alert-success" role="alert">
+       <p>タイトル：<a href="{% url 'notes:detail1' item.pk %}">{{item.title1}}</a></p>
+       <p>投稿者：{{item.user.username}}</p>
+       <p>授業日：{{item.day1}}</p>
+       
+       
+       
+       {% if request.user in item.like1.all %}
+       <a href="{% url 'notes:like-home1' item.pk %}" class="like-btn add-color" tabindex="-1" role="button" aria-disabled="true"><i class="fas fa-heart"></i>♡</a>{{item.like1.count}}
+       {% else %}
+       <a href="{% url 'notes:like-home1' item.pk %}" class="like-btn" tabindex="-1" role="button" aria-disabled="true"><i class="far fa-heart"></i>♡</a>{{item.like1.count}}
+       {% endif %}  
+
+       {% if item.user in connection.0.following.all %}
+       <a href="{% url 'notes:follow-home1' item.id %}" class="btn btn-danger ms-3" tabindex="-1" role="button" aria-disabled="true">フォロー解除</a>
+       {% else %}
+       <a href="{% url 'notes:follow-home1' item.id %}" class="btn btn-primary ms-3" tabindex="-1" role="button" aria-disabled="true">フォロー</a>
+       {% endif %}
+
+       
+       <img src="{{ item.file.url }}" width="193" height="130">
+   </div>
+   {% endfor %}
+</div>
+{% endblock content %}
