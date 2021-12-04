@@ -277,366 +277,842 @@ def note_like(request,pk):
     return redirect('notes:detail', pk)
 
 
-def note_li(request):
-    notes = Post1.objects.filter(sub1="1").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})    
 
-
-
-
-def note_en1(request):
-    notes = Post1.objects.filter(sub1="2").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-def note_ja(request):
-    notes = Post1.objects.filter(sub1="4").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_te(request):
-    notes = Post1.objects.filter(sub1="5").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_we(request):
-    notes = Post1.objects.filter(sub1="6").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_mt(request):
-    notes = Post1.objects.filter(sub1="7").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_ph(request):
-    notes = Post1.objects.filter(sub1="8").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_ec(request):
-    notes = Post1.objects.filter(sub1="9").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_un(request):
-    notes = Post1.objects.filter(sub1="10").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_ri(request):
-    notes = Post1.objects.filter(sub1="11").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_tc(request):
-    notes = Post1.objects.filter(sub1="12").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_ma(request):
-    notes = Post1.objects.filter(sub1="13").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-def note_ar(request):
-    notes = Post1.objects.filter(sub1="14").order_by('-created_at1')
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-
-def note_it(request):
-    notes = Post1.objects.filter(sub1="14").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-def note_se(request):
-    notes = Post1.objects.filter(sub1="15").order_by('-created_at1'),
-    return render(request,'list_sel1.html', {'notes': notes})
-
-
-
-def note_math2(request):
-    notes = Post.objects.filter(grade="1",sub="1").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_math3(request):
-    notes = Post.objects.filter(grade="2",sub="1").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_math4(request):
-    notes = Post.objects.filter(grade="3",sub="1").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-
-def note_ph2(request):
-    notes = Post.objects.filter(grade="1",sub="2").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ph3(request):
-    notes = Post.objects.filter(grade="2",sub="2").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ph4(request):
-    notes = Post.objects.filter(grade="3",sub="2").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_sc2(request):
-    notes = Post.objects.filter(grade="1",sub="3").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_sc3(request):
-    notes = Post.objects.filter(grade="2",sub="3").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_sc4(request):
-    notes = Post.objects.filter(grade="3",sub="3").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ti2(request):
-    notes = Post.objects.filter(grade="1",sub="4").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ti3(request):
-    notes = Post.objects.filter(grade="2",sub="4").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ti4(request):
-    notes = Post.objects.filter(grade="3",sub="4").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_me2(request):
-    notes = Post.objects.filter(grade="1",sub="5").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_me3(request):
-    notes = Post.objects.filter(grade="2",sub="5").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_me4(request):
-    notes = Post.objects.filter(grade="3",sub="5").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_de2(request):
-    notes = Post.objects.filter(grade="1",sub="6").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_de3(request):
-    notes = Post.objects.filter(grade="2",sub="6").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_de4(request):
-    notes = Post.objects.filter(grade="3",sub="6").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_tu2(request):
-    notes = Post.objects.filter(grade="1",sub="7").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_tu3(request):
-    notes = Post.objects.filter(grade="2",sub="7").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_tu4(request):
-    notes = Post.objects.filter(grade="3",sub="7").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_si2(request):
-    notes = Post.objects.filter(grade="1",sub="8").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_si3(request):
-    notes = Post.objects.filter(grade="2",sub="8").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_si4(request):
-    notes = Post.objects.filter(grade="3",sub="8").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ke2(request):
-    notes = Post.objects.filter(grade="1",sub="9").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ke3(request):
-    notes = Post.objects.filter(grade="2",sub="9").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ke4(request):
-    notes = Post.objects.filter(grade="3",sub="9").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ma2(request):
-    notes = Post.objects.filter(grade="1",sub="10").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ma3(request):
-    notes = Post.objects.filter(grade="2",sub="10").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ma4(request):
-    notes = Post.objects.filter(grade="3",sub="10").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ou2(request):
-    notes = Post.objects.filter(grade="1",sub="11").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ou3(request):
-    notes = Post.objects.filter(grade="2",sub="11").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_ou4(request):
-    notes = Post.objects.filter(grade="3",sub="11").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_su2(request):
-    notes = Post.objects.filter(grade="1",sub="12").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-def note_su3(request):
-    notes = Post.objects.filter(grade="2",sub="12").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_su4(request):
-    notes = Post.objects.filter(grade="3",sub="12").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_jo2(request):
-    notes = Post.objects.filter(grade="1",sub="13").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_jo3(request):
-    notes = Post.objects.filter(grade="2",sub="13").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_jo4(request):
-    notes = Post.objects.filter(grade="3",sub="13").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_se2(request):
-    notes = Post.objects.filter(grade="1",sub="14").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_se3(request):
-    notes = Post.objects.filter(grade="2",sub="14").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_se4(request):
-    notes = Post.objects.filter(grade="3",sub="14").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_bu2(request):
-    notes = Post.objects.filter(grade="1",sub="15").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_bu3(request):
-    notes = Post.objects.filter(grade="2",sub="15").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_bu4(request):
-    notes = Post.objects.filter(grade="3",sub="15").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_do2(request):
-    notes = Post.objects.filter(grade="1",sub="16").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_do3(request):
-    notes = Post.objects.filter(grade="2",sub="16").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_do4(request):
-    notes = Post.objects.filter(grade="3",sub="16").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_yu2(request):
-    notes = Post.objects.filter(grade="1",sub="17").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_yu3(request):
-    notes = Post.objects.filter(grade="2",sub="17").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_yu4(request):
-    notes = Post.objects.filter(grade="3",sub="17").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_en2(request):
-    notes = Post.objects.filter(grade="1",sub="18").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_en3(request):
-    notes = Post.objects.filter(grade="2",sub="18").order_by('-created_at'),
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_en4(request):
-    notes = Post.objects.filter(grade="3",sub="18").order_by('-created_at')
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_sec2(request):
-    notes = Post.objects.filter(grade="1",sub="19").order_by('-created_at')
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_sec3(request):
-    notes = Post.objects.filter(grade="2",sub="19").order_by('-created_at')
-    return render(request,'list_sel.html', {'notes': notes})
-
-
-def note_sec4(request):
-    notes = Post.objects.filter(grade="3",sub="19").order_by('-created_at')
-    return render(request,'list_sel.html', {'notes': notes})
+class LiPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(LiPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="1").order_by('-created_at1'),
+        })
+        return context
+
+
+class OtherPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(OtherPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="17").order_by('-created_at1'),
+        })
+        return context
+
+class En1Post(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(En1Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="2").order_by('-created_at1'),
+        })
+        return context
+
+class JaPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(JaPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="3").order_by('-created_at1'),
+        })
+        return context
+
+class TePost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(TePost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="4").order_by('-created_at1'),
+        })
+        return context
+
+class WePost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(WePost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="5").order_by('-created_at1'),
+        })
+        return context
+
+class MtPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(MtPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="6").order_by('-created_at1'),
+        })
+        return context
+
+class PhPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(PhPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="7").order_by('-created_at1'),
+        })
+        return context
+
+class EcPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(EcPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="8").order_by('-created_at1'),
+        })
+        return context
+
+class UnPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(UnPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="9").order_by('-created_at1'),
+        })
+        return context
+
+class RiPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(RiPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="10").order_by('-created_at1'),
+        })
+        return context
+
+class TcPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(TcPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="11").order_by('-created_at1'),
+        })
+        return context
+
+class MaPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(MaPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="12").order_by('-created_at1'),
+        })
+        return context
+
+class ArPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ArPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="13").order_by('-created_at1'),
+        })
+        return context
+
+class ItPost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ItPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub1="14").order_by('-created_at1'),
+        })
+        return context
+
+class SePost(LoginRequiredMixin, ListView):
+    model = Post1
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(SePost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post1.objects.filter(sub="15").order_by('-created_at1'),
+        })
+        return context
+
+
+
+
+
+class Math2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Math2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="1").order_by('-created_at'),
+        })
+        return context
+
+
+
+class Math3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Math3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="1").order_by('-created_at'),
+        })
+        return context
+
+
+class Math4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Math4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="1").order_by('-created_at'),
+        })
+        return context
+
+class Ph2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ph2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="2").order_by('-created_at'),
+        })
+        return context
+
+class Ph3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ph3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="2").order_by('-created_at'),
+        })
+        return context
+
+
+class Ph4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ph4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="2").order_by('-created_at'),
+        })
+        return context
+
+class Sc2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Sc2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="3").order_by('-created_at'),
+        })
+        return context
+
+class Sc3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Sc3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="3").order_by('-created_at'),
+        })
+        return context
+
+
+class Sc4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Sc4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="3").order_by('-created_at'),
+        })
+        return context
+
+
+class Ti2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ti2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="4").order_by('-created_at'),
+        })
+        return context
+
+class Ti3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ti3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="4").order_by('-created_at'),
+        })
+        return context
+
+
+class Ti4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(TiPost, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="4").order_by('-created_at'),
+        })
+        return context
+
+
+class Me2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Me2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="5").order_by('-created_at'),
+        })
+        return context
+
+
+class Me3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Me3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="5").order_by('-created_at'),
+        })
+        return context
+
+
+class Me4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Me4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="5").order_by('-created_at'),
+        })
+        return context
+
+
+class De2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(De2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="6").order_by('-created_at'),
+        })
+        return context
+
+class De3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(De3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="6").order_by('-created_at'),
+        })
+        return context
+
+class De4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(De4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="6").order_by('-created_at'),
+        })
+        return context
+
+
+class Tu2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Tu2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="7").order_by('-created_at'),
+        })
+        return context
+
+class Tu3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Tu3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="7").order_by('-created_at'),
+        })
+        return context
+
+
+class Tu4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Tu4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="7").order_by('-created_at'),
+        })
+        return context
+
+
+class Si2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Si2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="8").order_by('-created_at'),
+        })
+        return context
+
+class Si3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Si3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="8").order_by('-created_at'),
+        })
+        return context
+
+
+class Si4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Si4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="8").order_by('-created_at'),
+        })
+        return context
+
+
+class Ke2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ke2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="9").order_by('-created_at'),
+        })
+        return context
+
+class Ke3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ke3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="9").order_by('-created_at'),
+        })
+        return context
+
+
+class Ke4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ke4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="9").order_by('-created_at'),
+        })
+        return context
+
+
+class Ma2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ma2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="10").order_by('-created_at'),
+        })
+        return context
+
+
+class Ma3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ma3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="10").order_by('-created_at'),
+        })
+        return context
+
+
+class Ma4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ma4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="10").order_by('-created_at'),
+        })
+        return context
+
+
+class Ou2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ou2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="11").order_by('-created_at'),
+        })
+        return context
+
+class Ou3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ou3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="11").order_by('-created_at'),
+        })
+        return context
+
+
+class Ou4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Ou4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="11").order_by('-created_at'),
+        })
+        return context
+
+
+class Su2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Su2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="12").order_by('-created_at'),
+        })
+        return context
+
+
+class Su3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Su3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="12").order_by('-created_at'),
+        })
+        return context
+
+class Su4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Su4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="12").order_by('-created_at'),
+        })
+        return context
+
+
+class Jo2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Jo2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="13").order_by('-created_at'),
+        })
+        return context
+
+class Jo3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Jo3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="13").order_by('-created_at'),
+        })
+        return context
+
+class Jo4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Jo4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="13").order_by('-created_at'),
+        })
+        return context
+
+class Se2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Se2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="14").order_by('-created_at'),
+        })
+        return context
+
+class Se3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Se3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="14").order_by('-created_at'),
+        })
+        return context
+
+class Se4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Se4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="14").order_by('-created_at'),
+        })
+        return context
+
+
+class Bu2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Bu2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="15").order_by('-created_at'),
+        })
+        return context
+
+class Bu3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Bu3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="15").order_by('-created_at'),
+        })
+        return context
+
+class Bu4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Bu4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="15").order_by('-created_at'),
+        })
+        return context
+
+class Do2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Do2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="16").order_by('-created_at'),
+        })
+        return context
+
+class Do3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Do3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="16").order_by('-created_at'),
+        })
+        return context
+
+class Do4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Do4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="16").order_by('-created_at'),
+        })
+        return context
+
+class Yu2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Yu2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="17").order_by('-created_at'),
+        })
+        return context
+
+class Yu3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Yu3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="17").order_by('-created_at'),
+        })
+        return context
+
+class Yu4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Yu4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="17").order_by('-created_at'),
+        })
+        return context
+
+class En2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(En2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="18").order_by('-created_at'),
+        })
+        return context
+
+class En3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(En3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="18").order_by('-created_at'),
+        })
+        return context
+
+class En4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(En4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="18").order_by('-created_at'),
+        })
+        return context
+
+
+
+class Sec2Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Sec2Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="1",sub="19").order_by('-created_at'),
+        })
+        return context
+
+class Sec3Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Sec3Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="2",sub="19").order_by('-created_at'),
+        })
+        return context
+
+class Sec4Post(LoginRequiredMixin, ListView):
+    model = Post
+    template_name = 'list_sel.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Sec4Post, self).get_context_data(**kwargs)
+        context.update({
+            'object_list': Post.objects.filter(grade="3",sub="19").order_by('-created_at'),
+        })
+        return context
 
 
 def note_grade(request):

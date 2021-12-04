@@ -7,12 +7,13 @@
 
 {% block content %}
 <div class="container mt-3">
-   {% for note in notes %}
+   {% for item in object_list %}
    <div class="alert alert-success" role="alert">
-      <p>タイトル：<a href="{% url 'notes:detail1' note.id %}">{{ note.title1 }}</a></p>
-      <p>投稿者：{{note.user}}</p>
-      <p>授業日：{{note.day1}}</p>
-      <img src="{{ note.file.url }}" width="193" height="130">
+      <p>タイトル：<a href="{% url 'notes:detail' item.id %}">{{ item.title1 }}</a></p>
+      <p>投稿者：{{item.user}}</p>
+      <p>授業日：{{item.day1}}</p>
+      <p>いいね数：{{item.like1.count}}</p>
+      <img src="{{ item.file.url }}" width="193" height="130">
    </div>
    {% endfor %}
 </div>
